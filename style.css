@@ -1,0 +1,23 @@
+/* CMOSTACKS Expense Tracker */
+*{
+box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #222222;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+h1{
+  text-align: center;
+  color: #2457c5;
+}
+
+p{
+  text-align: center;
+  font-size: 18px;
+  color: #555555;
+}
