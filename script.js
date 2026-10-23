@@ -16,7 +16,7 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  const listItem = document.createdElement("li");
+  const listItem = document.createElement("li");
   listItem.textContent = `${name} - $${amount.toFixed(2)}`;
   expenseList.appendChild(listItem);
 
