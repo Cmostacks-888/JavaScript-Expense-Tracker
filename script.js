@@ -19,6 +19,14 @@ form.addEventListener("submit", function (event) {
   const listItem = document.createElement("li");
   listItem.textContent = `${name} - $${amount.toFixed(2)}`;
   expenseList.appendChild(listItem);
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "Delete";
+  listItem.appendChild(deleteButton);
+  deleteButton.addEventListener("click", function () {
+    expenseList.removeChild(listItem);
+    total -= amount;
+    totalDisplay.textContent = total.toFixed(2);
+  });
 
   total += amount;
   totalDisplay.textContent = total.toFixed(2);
