@@ -2,7 +2,7 @@ const form = document.getElementById("expense-form");
 const nameInput = document.getElementById("expense-name");
 const amountInput = document.getElementById("expense-amount");
 const totalDisplay = document.getElementById("total");
-const expenseList = document.getelementById("expense-list");
+const expenseList = document.getElementById("expense-list");
 
 let total = 0;
 
