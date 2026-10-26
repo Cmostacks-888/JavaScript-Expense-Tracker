@@ -5,47 +5,48 @@ box-sizing: border-box;
 
 body{
   font-family: Arial, sans-serif;
-  background-color: #f4f7fb;
-  color: #222222;
+  background-color: #080808;
+  color: #ffffff;
   margin: 0;
   padding: 40px 20px;
 }
 
 h1{
   text-align: center;
-  color: #2457c5;
+  color: #b7ff00;
 }
 
 p{
   text-align: center;
   font-size: 18px;
-  color: #555555;
+  color: #ffffff;
 }
 
 body {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #f4f7fb;
+  background-color: #080808;
   font-family: Arial, sans-serif;
-  color: #222222;
+  color: #ffffff;
 }
 
 h1 {
-  background-color: #2457c5;
-  color: white;
+  background-color: #080808;
+  color: #ffffff;
   padding: 25px;
+  border: 2px solid #b7ff00;
   border-radius: 12px;
   text-align: center;
 }
 
 h2 {
-  color: #2457c5;
+  color: #b7ff00;
   margin-top: 30px;
 }
 
 form {
-  background-color: white;
+  background-color: #151515;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -61,8 +62,8 @@ input {
 }
 
 button {
-  background-color: #2457c5;
-  color: white;
+  background-color: #b7ff00;
+  color: #080808;
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
@@ -70,7 +71,7 @@ button {
   font-size: 16px;
 }
 button:hover {
-  background-color: #173f96;
+  background-color: #9ee600;
 }
 
 #expense-list li {
