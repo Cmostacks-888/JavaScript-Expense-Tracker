@@ -64,14 +64,24 @@ input {
 button {
   background-color: #b7ff00;
   color: #080808;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
+  padding: 12px 24px;
+  border: 1px solid #b7ff00;
+  border-radius: 999px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(183, 255, 0, 0.35);
+  transition: background-color 0.2s ease,
+              box-shadow 0.2s ease,
+              transform 0.2s ease;
 }
+
 button:hover {
-  background-color: #9ee600;
+  background-color: #c8ff33;
+    background-color: #c8ff33;
+    box-shadow: 0 0 12px rgba(183, 255, 0, 0.7),
+                0 0 24px rgba(183, 255, 0, 0.35);
+  transform: translateY(-2px);
 }
 
 #expense-list li {
