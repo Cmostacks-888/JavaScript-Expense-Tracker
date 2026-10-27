@@ -92,3 +92,45 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background-color: #080808;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #263d20;
+}
+
+.brand-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b7ff00;
+  color: #080808;
+  border-radius: 12px;
+  font-size: 36px;
+  font-weight: bold;
+  box-shadow: 0 0 14px rgba(183, 255, 0, 0.35);
+}
+
+.brand-text h1 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #ffffff;
+  font-size: 26px;
+  text-align: left;
+}
+
+.brand-text p {
+  margin: 3px 0 0;
+  color: #b7ff00;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left:
+}
