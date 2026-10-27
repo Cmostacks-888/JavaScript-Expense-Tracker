@@ -143,3 +143,20 @@ button:hover {
   font-weight: bold;
   text-align: left:
 }
+
+@media (max-width: 600px) {
+  #expense-list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  #expense-list li button {
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+}
