@@ -4,6 +4,7 @@ const amountInput = document.getElementById("expense-amount");
 const totalDisplay = document.getElementById("total");
 const expenseList = document.getElementById("expense-list");
 
+let expenses = JSON.parse(localStorage.getItem("cmostacks-expenses")) || [];
 let total = 0;
 
 form.addEventListener("submit", function (event) {
@@ -15,7 +16,9 @@ form.addEventListener("submit", function (event) {
   if (name === "" || !Number.isFinite(amount) || amount <= 0) {
     return;
   }
-
+  const expense = { name: name, amount: amount };
+  expenses.push(expense);
+  localStorage.setItem("cmostacks-expenses", JSON.stringify(expenses));
   const listItem = document.createElement("li");
   listItem.textContent = `${name} - $${amount.toFixed(2)}`;
   expenseList.appendChild(listItem);
@@ -24,6 +27,13 @@ form.addEventListener("submit", function (event) {
   listItem.appendChild(deleteButton);
   deleteButton.addEventListener("click", function () {
     expenseList.removeChild(listItem);
+
+    expenses = expenses.filter(function (item) {
+      return item.name !== name || item.amount !== amount;
+    });
+
+    localStorage.setItem("cmostacks-expenses", JSON.stringify(expenses));
+    
     total -= amount;
     totalDisplay.textContent = total.toFixed(2);
   });
