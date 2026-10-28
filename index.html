@@ -30,7 +30,26 @@
       <p>Total: $<span id="total">0.00</span></p>
 
       <ul id="expense-list"></ul>
+
+      <section id="calendar-section">
+        <h2>Expense Calendar</h2>
+        <p>Choose a date to view your expenses.</p>
+
+        <div class="calendar-header">
+          <button type="button" id="prev-month"> </button>
+          <h3 id="calendar-month"></h3>
+          <button type="button" id="next-month"> </button>
+        </div>
+
+        <div id="calendar-grid" class="calendar-grid"></div>
+
+        <div id="selected-date-details">
+          <h3>Expense for <span id="selected-date"></span></h3>
+          <ul id="calendar-expense-list"></ul>
+          <p>Daily Total: $<span id="daily-total">0.00</span></p>
+        </div>
+      </section>  
       
-    <script src="script.js"></script>
+        <script src="script.js"></script>
     </body>
     </html>
