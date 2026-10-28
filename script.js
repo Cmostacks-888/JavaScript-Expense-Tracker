@@ -69,7 +69,7 @@ function loadExpenses() {
       });
 
       localStorage.setItem(
-        "cmostacks-expenses"
+        "cmostacks-expenses",
         JSON.stringify(expenses)
       );
 
