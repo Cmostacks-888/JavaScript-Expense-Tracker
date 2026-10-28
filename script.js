@@ -173,10 +173,37 @@ function renderCalendar() {
   renderSelectedDate();
 }
 
+function renderSelectedDate() {
+  const dateString = formatDate(selectedDate);
 
+  selectedDateDisplay.textContent = 
+    selectedDate.toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    });
 
+  calendarExpenseList.innerHTML = "";
 
+  let dailyTotal = 0;
 
+  const matchingExpenses = expenses.filter(function (expense) {
+    return expense.date === dateString;
+  });
+
+  matchingExpenses.forEach(functionv(expense) {
+    const item = document.createElement("li");
+
+    item.textContent =
+      `${expense.name} - $${expense.amount.toFixed(2)}`;
+
+    calendarExpenseList.appendChild(item);
+    dailyTotal += expense.amount;
+  });
+
+  document.getElementById("daily-total").textContent =
+    dailyTotal.toFixed(2);
+}
 
 
 
