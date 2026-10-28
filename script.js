@@ -43,6 +43,45 @@ form.addEventListener("submit", function (event) {
 
   form.reset( );
 });
+
+function loadExpenses() {
+  expenses = JSON.parse(
+   localStorage.getItem("cmostacks-expenses") || "[]"
+  );
+
+  expenses.forEach(function (expense) {
+    const listItem = document.createElement("li");
+    listItem.textContent =
+      `${expense.name} - $${expense.amount.toFixed(2)}`;
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+    listItem.appendChild(deleteButton);
+    expenseList.appendChild(listItem);
+
+    total += expense.amount;
+
+    deleteButton.addEventListener("click", function () {
+      expenseList.removeChild(listItem);
+
+      expenses = expenses.filter(function (item) {
+        return item !== expense;
+      });
+
+      localStorage.setItem(
+        "cmostacks-expenses"
+        JSON.stringify(expenses)
+      );
+
+      total -= expense.amount;
+      totalDisplay.textContent = total.toFixed(2);
+    });
+  });
+
+  totalDisplay.textContent = total.toFixed(2);
+}
+
+loadExpenses();
   
                                     
 
