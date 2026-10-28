@@ -205,6 +205,18 @@ function renderSelectedDate() {
     dailyTotal.toFixed(2);
 }
 
+prevMonthButton.addEventListener("click", function () {
+  displayedMonth.setMonth(displayedMonth.getMonth() - 1);
+  renderCalendar();
+});
+
+nextMonthButton.addEventListener("click", function () {
+  displayedMonth.setMonth(displayedMonth.getMonth() + 1);
+  renderCalendar();
+});
+
+renderCalendar();
+
 
 
 
