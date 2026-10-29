@@ -147,7 +147,7 @@ function renderCalendar() {
     const dayButton = document.createElement("button");
     dayButton.type = "button";
     dayButton.textContent = day;
-    dayButton.classList.add("calander-day");
+    dayButton.classList.add("calendar-day");
 
     if (dateString === formatDate(selectedDate)) {
       dayButton.classList.add("selected");
