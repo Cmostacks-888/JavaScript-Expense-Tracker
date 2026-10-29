@@ -115,7 +115,7 @@ function renderCalendar() {
   const year = displayedMonth.getFullYear();
   const month = displayedMonth.getMonth();
 
-  calendarMonth.textContext = displayedMonth.toLocaleDateString(
+  calendarMonth.textContent = displayedMonth.toLocaleDateString(
     "en-US",
     {month: "long", year: "numeric" }
   );
@@ -191,8 +191,8 @@ function renderSelectedDate() {
     return expense.date === dateString;
   });
 
-  matchingExpenses.forEach(functionv(expense) {
-    const item = document.createElement("li");
+  matchingExpenses.forEach(function (expense) {
+    const item = document.createElement("li"); 
 
     item.textContent =
       `${expense.name} - $${expense.amount.toFixed(2)}`;
