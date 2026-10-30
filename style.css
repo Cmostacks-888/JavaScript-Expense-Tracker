@@ -557,4 +557,10 @@ h2 {
   body {
     padding-bottom: 85px;
   }
-}
+
+  .nav-item img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+  }
