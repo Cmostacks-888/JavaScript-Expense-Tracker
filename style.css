@@ -487,3 +487,74 @@ h2 {
   height: 300px;
   position: relative;
 }
+
+.action-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #101410;
+  border: 1px solid #b7ff00;
+  border-radius: 14px;
+  padding: 20px auto;
+  max-width: 1100px
+  box-shadow: 0 0 12px rgba(183, 255, 0, 0.2);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: #b7ff00;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: 0.3 ease;
+}
+
+.nav-item span {
+  font-size: 23px;
+}
+
+.nav-item small {
+  font-size: 11px;
+}
+
+.nav-item:hover,
+>nav-item.active {
+  background: #202820;
+  color: #ffffff;
+  text-shadow: 0 0 10px #b7ff00;
+  box-shadow: 0 0 12px rgba(183, 255, 0, 0.4);
+}
+
+@media (max-width: 600px) {
+  .action-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin: 0;
+    border-radius:14px 14px 0 0;
+    padding: 8px 2px;
+    background:#090d09;
+  }
+
+  .nav-item {
+    padding: 6px 3px;
+    gap: 4px;
+  }
+
+  .nav-item span {
+    font-size: 20px;
+  }
+
+  .nav-item small {
+    font-size: 9px;
+  }
+
+  body {
+    padding-bottom: 85px;
+  }
+}
