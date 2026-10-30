@@ -16,28 +16,7 @@
   </header>
       
       <h2>Add a New Expense</h2>
-  <section id="bitcoin-market">
-      <h2>Bitcoin Market | BTC</h2>
-
-      <div class="bitcoin-price">
-        <p>Bitcoin Price</p>
-        <h3 id="btc-price">Loading...</h3>
-        <p id="btc-change">Waiting for market data</p>
-      </div>
-
-      <div class="bitcoin-timeframes">
-        <button data-range="1">1D</button>
-        <button data-range="7">7D</button>
-        <button data-range="30">1M</button>
-        <button data=range="90">3M</button>
-        <button data=range="365">1Y</button>
-      </div>
-
-      <div class="bitcoin-chart-container">
-          <canvas id="bitcoin-chart"></canvas>
-      </div>
-  </section>
-    
+         
       <form id="expense-form">
         <label for="expense-name">Expense Name</label>
         <input type="text" id="expense-name" placeholder="e.g. Groceries" required>
@@ -82,8 +61,30 @@
             </p>
           </div>
        </div>
-      </section>  
+      </section>
+       
+      <section id="bitcoin-market">
+        <h2>Bitcoin Market | BTC</h2>
 
+      <div class="bitcoin-price">
+        <p>Bitcoin Price</p>
+        <h3 id="btc-price">Loading...</h3>
+        <p id="btc-change">Waiting for market data</p>
+      </div>
+
+      <div class="bitcoin-timeframes">
+        <button data-range="1">1D</button>
+        <button data-range="7">7D</button>
+        <button data-range="30">1M</button>
+        <button data=range="90">3M</button>
+        <button data=range="365">1Y</button>
+      </div>
+
+      <div class="bitcoin-chart-container">
+          <canvas id="bitcoin-chart"></canvas>
+      </div>
+  </section>
+      
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="script.js"></script>
     </body>
