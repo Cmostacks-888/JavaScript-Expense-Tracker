@@ -396,6 +396,7 @@ h2 {
 #calendar-section . p {
   text-align: center;
   width: 100%;
+  margin: 0 auto 30px;
 }
 
 .calendar-header {
