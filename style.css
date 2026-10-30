@@ -585,8 +585,14 @@ h2 {
     z-index: 1000;
     background: #080808;
   }
-}
-  
+
+  .action-bar .nav-item img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+  }
+
   .nav-item img {
     width: 42px;
     height: 42px;
