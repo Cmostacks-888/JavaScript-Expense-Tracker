@@ -227,6 +227,47 @@ nextMonthButton.addEventListener("click", function () {
 
 renderCalendar();
 
+const btcPriceDisplay = document.getElementById("btc-price");
+const btcChangeDisplay = document.getElementById("btc-change");
+const btcChartCanvas = document.getElementById("bitcoin-chart");
+
+let bitcoinChart = null;
+
+async function loadBitcoinData(days = 1) {
+  btcPriceDisplay.textContent = "Loading...";
+  btcChangeDisplay.textContent = "Fetching Bitcoin data...";
+
+  try {
+    const response = await fetch(
+      `https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=${days}`
+    );
+
+    if (!response.ok) {
+        throw new Error("Bitcoin data unavailable");
+    }
+
+    const data = await response.json();
+
+    const prices = data.prices;
+    const latestPrice = prices[prices.length - 1][1];
+    const firstPrice = prices[0][1];
+
+    const change = ((latestPrice - firstPrice) / firstPrice) * 100;
+
+    btcPriceDisplay.textContent =
+      "S" + latestPrice.toLocalString("en-US", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+      });
+
+    btcChangeDisplay.textContent =
+      change.toFixed(2) + "% over selected period";
+
+  } catch (error) {
+      btcPriceDisplay.textContent = "Unavailable";
+      btcChangeDisplay.textContent = error.message;
+  }
+}
 
 
 
