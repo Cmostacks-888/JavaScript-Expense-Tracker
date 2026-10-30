@@ -425,3 +425,65 @@ h2 {
       0 0 30px rgba(183, 255, 0, 0.6);
   }
 }
+
+#bitcoin-market {
+  width: 90%;
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  background: #101010;
+  border: 1px solid rgba(183, 255, 0, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(183, 255, 0, 0.12);
+}
+
+#bitcoin-market h2 {
+  color: #b7ff00;
+  text-shadow: 0 0 10px rgba(183, 255, 0, 0.4);
+}
+
+.bitcoin-price {
+  padding: 15px;
+}
+
+#btc-price {
+  color: #b7ff00;
+  font-size: 32px;
+  text-shadow: 0 0 12px rgba(183, 255, 0, 0.5);
+}
+
+#btc-change {
+  color: #ffffff;
+}
+
+.bitcoin-timeframes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.bitcoin-timeframes button {
+  background: #181818;
+  color: #b7ff00;
+  border: 1px solid #b7ff00;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.bitcoin-timeframes button:hover {
+  background: #b7ff00;
+  color: #080808;
+  box-shadow: 0 0 15px rgba(183, 255, 0, 0.5);
+}
+
+.bitcoin-chart-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
