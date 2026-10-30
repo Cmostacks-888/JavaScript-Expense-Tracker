@@ -384,3 +384,20 @@ h2 {
 .calendar-header {
   text-align: center;
 }
+
+#expense-summary-title {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#calendar-section > h2,
+#calendar-section . p {
+  text-align: center;
+  width: 100%;
+}
+
+.calendar-header {
+  justify-content: center;
+}
