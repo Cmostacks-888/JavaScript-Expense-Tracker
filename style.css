@@ -568,6 +568,12 @@ h2 {
 @media (min-width: 601px) {
   .action-bar {
     position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    box-sizing: border-box;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
