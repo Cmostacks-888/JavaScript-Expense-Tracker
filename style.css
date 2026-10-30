@@ -298,6 +298,10 @@ button:hover {
       0 0 18px rgba(183, 255, 0, 0.20);
   }
 
+  .calendar-day.selected {
+    color: #000000 !important;
+  }
+
   .calendar-day.today:not(.selected) {
-    color: #000000;
+    color: #ffffff;
   }
