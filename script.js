@@ -148,6 +148,12 @@ function renderCalendar() {
     dayButton.type = "button";
     dayButton.textContent = day;
     dayButton.classList.add("calendar-day");
+    const today = new Date();
+    if (
+      dateString === formatDate(today)
+    ) {
+      dayButton.classList.add("today");
+    }
 
     if (dateString === formatDate(selectedDate)) {
       dayButton.classList.add("selected");
