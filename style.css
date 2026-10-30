@@ -305,3 +305,33 @@ button:hover {
   .calendar-day.today:not(.selected) {
     color: #ffffff;
   }
+
+#expense-total-summary {
+  border-top: 2px solid #b7ff00;
+  border-bottom: 2px solid #b7ff00;
+  padding: 24px 0;
+  margin-top: 25px;
+  box-shadow:
+    0 -3px 12px rgba(183, 255, 0, 0.25),
+    0 3px 12px rgba(183, 255, 0, 0.25);
+}
+
+#expense-total-summary h3 {
+  color: #b7ff00;
+  text-shadow: 0 0 10px rgba(183, 255, 0, 0.45);
+}
+
+#selected-date-details > p {
+  color: #b7ff00;
+}
+
+#expense-total-summary p {
+  color: #b7ff00;
+}
+
+#daily-total,
+#monthly-total,
+#overall-total {
+  color: #b7ff00;
+  text-shadow: 0 0 8px rgba(183, 255, 0, 0.45);
+}
