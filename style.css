@@ -352,3 +352,17 @@ button:hover {
   text-align: center;
   width: 100%;
 }
+
+@keyframes cmostacksShimmer {
+  0%, 85%, 100% {
+      filter: brightness(1);
+      text-shadow: 0 0 8px #b7ff00;}
+  }
+  90% {
+      filter: brightness(1.8);
+      text-shadow:
+          0 0 12px #b7ff00,
+          0 0 25px #b7ff00,
+          0 0 40px #b7ff00;
+  }
+}
