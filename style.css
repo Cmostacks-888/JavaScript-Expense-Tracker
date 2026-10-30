@@ -516,6 +516,13 @@ h2 {
   font-size: 23px;
 }
 
+.nav-item img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
 .nav-item small {
   font-size: 11px;
 }
