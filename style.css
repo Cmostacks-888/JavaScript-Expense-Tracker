@@ -335,3 +335,20 @@ button:hover {
   color: #b7ff00;
   text-shadow: 0 0 8px rgba(183, 255, 0, 0.45);
 }
+
+#expense-total-summary {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#expense-total-summary h3 {
+  text-align: center;
+}
+
+#expense-total-summary p {
+  text-align: center;
+  width: 100%;
+}
