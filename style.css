@@ -290,4 +290,14 @@ button:hover {
     font-size: 0.75rem;
   }
 }
-  
+
+  .calendar-day.today:not(.selected) {
+    border: 1px solid #b7ff00;
+    box-shadow:
+      0 0 8px rgba(183, 255, 0, 0.45),
+      0 0 18px rgba(183, 255, 0, 0.20);
+  }
+
+  .calendar-day.today:not(.selected) {
+    color: #000000;
+  }
