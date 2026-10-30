@@ -366,3 +366,21 @@ button:hover {
           0 0 40px #b7ff00;
   }
 }
+
+#expense-list,
+h2 {
+  text-align: center;
+}
+
+#selected-date-details {
+  text-align: center;
+}
+
+#selected-date-details h3,
+#selected-date-details p {
+  text-align: center;
+}
+
+.calendar-header {
+  text-align: center;
+}
