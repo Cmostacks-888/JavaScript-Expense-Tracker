@@ -46,14 +46,16 @@ form.addEventListener("submit", function (event) {
     expenseList.removeChild(listItem);
 
     expenses = expenses.filter(function (item) {
-      return item.name !== name || item.amount !== amount;
+      return item !== expense;
     });
 
     localStorage.setItem("cmostacks-expenses", JSON.stringify(expenses));
     
     total -= amount;
     totalDisplay.textContent = total.toFixed(2);
-  });
+    
+    renderCalendar();
+    });
 
   total += amount;
   totalDisplay.textContent = total.toFixed(2);
@@ -92,6 +94,8 @@ function loadExpenses() {
 
       total -= expense.amount;
       totalDisplay.textContent = total.toFixed(2);
+
+      renderCalendar();
     });
   });
 
