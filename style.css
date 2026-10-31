@@ -831,3 +831,35 @@ body {
 body {
   padding-bottom: 110px;
 }
+
+@media (min-width: 768px) {
+
+  .action-bar {
+    position: fixed;
+    top: 16px;
+    bottom: 16px;
+    left: 16px;
+    right: auto;
+
+    width: 76px;
+    max-width: 76px;
+    height: auto;
+
+    transform: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 40px;
+  }
+
+  .action-bar .nav-item {
+    width: 100%;
+    flex: 1;
+  }
+
+  body{
+    padding-left: 110px;
+    padding-bottom: 0;
+  }
+}
