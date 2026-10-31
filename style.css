@@ -708,3 +708,44 @@ h2 {
     font-size: 38px;
   }
 }
+
+#bitcoin-market {
+  border: 2px solid #b7ff00;
+  border-radius: 24px;
+  box-shadow:
+    0 0 10px rgba(183, 255, 0, 0.35),
+    0 0 25px rgba(183, 255, 0, 0.20);
+  animation: bitcoinGlow 3s ease-in-out infinite;
+}
+
+#bitcoin-market h2 {
+  color: #b7ff00;
+  text-shadow:
+    0 0 10px #b7ff00,
+    0 0 25px rgba(183, 255, 0, 0.65);
+}
+
+#bitcoin-market .bitcoin-timeframes button {
+  border: 2px solid #b7ff00;
+  color: #b7ff00;
+  background: #101810;
+  box-shadow: 0 0 8px rgba(183, 255, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+#bitcoin-market .bitcoin-timeframes button:hover {
+  background: #b7ff00;
+  color: #080d08;
+  box-shadow: 0 0 18px #b7ff00;
+}
+
+@keyframes bitcoinGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(183, 255, 0, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 0 18px rgba(183, 255, 0, 0.65),
+      0 0 35px rgba(183, 255, 0, 0.25);
+  }
+}
