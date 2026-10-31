@@ -777,6 +777,11 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  transform: none;
+  box-sizing: border-box;
   z-index: 9999;
 }
 
