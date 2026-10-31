@@ -788,3 +788,46 @@ h2 {
 body {
   padding-bottom: 90px;
 }
+
+.action-bar {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+
+  width: calc(100% - 32px);
+  max-width: 900px;
+  min-height: 68px;
+
+  border-radius: 999px;
+  overflow: hidden;
+
+  background: rgba(25, 27, 30, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.5),
+    0 0 12px rgba(183, 255, 0, 0.18);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 8px 10px;
+  box-sizing: border-box;
+  z-indexx: 9999;
+}
+
+.action-bar .nav-item {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+body {
+  padding-bottom: 110px;
+}
