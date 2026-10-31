@@ -305,6 +305,24 @@ button:hover {
   .calendar-day.today:not(.selected) {
     color: #ffffff;
   }
+.calendar-day.today {
+  background: #b7ff00 !important;
+  color: #071007 !important;
+  border: 2px solid #b7ff00 !important;
+  font-weight: 900;
+  box-shadow:
+    0 0 8px rgba(183, 255, 0, 0.65),
+    0 0 20px rgba(183, 255, 0, 0.35);
+  position: relative;
+}
+
+.calendar-day.today::after {
+  content: "TODAY";
+  display: block;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
 #expense-total-summary {
   border-top: 2px solid #b7ff00;
