@@ -863,3 +863,27 @@ body {
     padding-bottom: 0;
   }
 }
+
+.action-bar {
+  border: 1px solid #b7ff00;
+  box-shadow:
+    0 0 10px rgba(183, 255, 0, 0.45),
+    0 0 22px rgba(183, 255, 0, 0.25),
+    inset 0 0 12px rgba(183, 255, 0, 0.08);
+
+  animation: actionBarGlow 3s ease-in-out infinite;
+}
+
+@keyframes actionBarGlow {
+  0%, 100% {
+      box-shadow:
+        0 0 10px rgba(183, 255, 0, 0.35),
+        0 0 20px rgba(183, 255, 0, 0.18);
+  }
+
+  50% {
+      box-shadow:
+        0 0 16px rgba(183, 255, 0, 0.75),
+        0 0 32px rgba(183, 255, 0, 0.40);
+  }
+}
