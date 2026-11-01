@@ -5,10 +5,47 @@ box-sizing: border-box;
 
 body{
   font-family: Arial, sans-serif;
-  background-color: #080808;
+  background-color: #030508;
+  position: relative;
+  isolation: isolate;
   color: #ffffff;
   margin: 0;
   padding: 40px 20px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(ellipse at 50% 10%,
+        rgba(0, 255, 40, 0.18), transparent 35%),
+    radial-gradient(ellipse at 10% 60%,
+        rgba(0, 180, 100, 0.12), transparent 40%),
+    radial-gradient(ellipse at 90% 85%,
+        rgba(0, 255, 30, 0.12), transparent 35%),
+    radial-gradient(circle,
+        rgba(255, 255, 255, 0.8) 1px, transparent 1.5px);
+
+  background-size:
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    90px 90px;
+
+  animation: galaxyDrift 30s linear infinite;
+}
+
+@keyframes galaxyDrift {
+  from {
+      background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+  to {
+      background-position: 0 0, 0 0, 0 0, 90px 90px;
+  }
 }
 
 h1{
