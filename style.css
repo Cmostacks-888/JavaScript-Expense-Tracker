@@ -654,7 +654,7 @@ h2 {
   .action-bar {
     position: fixed;
     left: 50%;
-    right: auto
+    right: auto;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-around;
