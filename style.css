@@ -194,6 +194,7 @@ button:hover {
   margin: 0;
   padding: 0;
   border: none;
+  background-color: transparent;
   color: #ffffff;
   font-size: 26px;
   text-align: left;
