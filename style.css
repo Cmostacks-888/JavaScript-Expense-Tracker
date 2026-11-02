@@ -660,6 +660,8 @@ h2 {
     padding: 10px 16px;
     box-sizing: border-box;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 1000;
     background: #080808;
   }
