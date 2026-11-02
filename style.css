@@ -333,6 +333,15 @@ button:hover {
   .calendar-section {
     padding: 12px;
   }
+  input[type="date"] {
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .calendar-grid {
+    gap: 3px;
+  }
 
   .calendar-grid {
     gap: 3px;
