@@ -1035,6 +1035,10 @@ body {
 }
 
 @media (max-width: 600px) {
+  .action-bar {
+    transform: translateX(-12px);
+  }
+  
   .corner-controls {
     padding: 0 8px;
     gap: 5px;
