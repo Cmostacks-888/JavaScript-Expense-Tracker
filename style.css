@@ -1058,17 +1058,57 @@ body {
     font-size: 10px;
   }
 }
-/* CMOSTACKS - Center Action Bar */
+/* CMOSTACKS CAPSULE ACTION BAR */
+
+/* DESKTOP - VERTICAL */
 .action-bar {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 
-  width: calc(100% - 32px);
-  max-width: 1100px;
+  width: 150px;
+  max-width: 150px;
+  mmin-height: 420px;
 
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
+  padding: 18px 12px;
 
   box-sizing: border-box;
+  border-radius: 999px;
+}
+
+/* MOBILE - HORIZONTAL */
+@media (max-width: 600px) {
+  .action-bar {
+    flex-direction: row;
+    width: calc(100% - 32px);
+    max-width: none;
+    min-height: 0;
+
+    margin: 0 auto;
+    padding: 12px 10px;
+    justify-content: space-around;
+    border-radius: 999px;
+  }
+}
+
+/* DESKTOP ACTION BAR SIZE */
+.corner-controls .action-bar {
+  flex: 0 0 150px;
+  width: 150px;
+  max-width: 150px;
+  min-height: 420px;
+  margin: 20px auto;
+}
+
+/* MOBILE ACTION BAR SIZE */
+@media (max-width: 600px) {
+  .corner-controls .action-bar {
+    flex: 0 1 auto;
+    width: calc(100% - 32px);
+    max-width: none;
+    min-height: 0;
+    margin: 0 auto;
+  }
 }
