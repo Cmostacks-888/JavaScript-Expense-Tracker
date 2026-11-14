@@ -1143,3 +1143,32 @@ body {
     box-sizing: border-box;
   }
 }
+
+/*  CMOSTACKS - MOBILE CAPSULE POSITION FIX */
+@media (max-width: 600px) {
+
+  .corner-controls {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 16px;
+  }
+
+  .corner-controls > .action-bar {
+    position: relative;
+    left: auto;
+    right: auto;
+    transform: none;
+
+    flex: 0 1 auto;
+    width: calc(100vw - 48px);
+    max-width: 420px;
+    min-width: 0;
+
+    margin: 12px auto;
+    box-sizing: border-box;
+  }
+}
