@@ -1176,7 +1176,7 @@ body {
 
   .action-bar {
     position: fixed !important;
-
+    top: auto !important;
     left: 50%;
     right: auto;
     bottom: calc(16px + env(safe-area-inset-botttom)) !important;
