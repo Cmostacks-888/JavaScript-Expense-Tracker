@@ -1178,11 +1178,11 @@ body {
 @media (max-width: 600px) {
 
   .corner-controls > .action-bar {
-    position: fixed;
+    position: fixed !important;
 
     left: 50%;
     right: auto;
-    bottom: calc(16px + env(safe-area-inset-botttom));
+    bottom: calc(16px + env(safe-area-inset-botttom)) !important;
 
     transform: translateX(-50%);
 
