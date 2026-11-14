@@ -1006,10 +1006,11 @@ body {
   align-items: center;
   justify-content: center;
 
-  width: 195px;
-  height: 185px;
-  min-height: 0px;
-  padding: 12px;
+  width: 120px;
+  height: 120px;
+  min-height: 120px;
+  padding: 10px;
+  flex: 0 0 120px;
 
   border: 2px solid rgba(183, 255, 101, 0.40);
   border-radius: 24px;
