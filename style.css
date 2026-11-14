@@ -643,7 +643,7 @@ h2 {
 
 @media (max-width: 600px) {
   .action-bar {
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
