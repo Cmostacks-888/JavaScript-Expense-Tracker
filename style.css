@@ -1174,7 +1174,7 @@ body {
 
 @media (max-width: 600px) {
 
-  .corner-controls > .action-bar {
+  .action-bar {
     position: fixed !important;
 
     left: 50%;
