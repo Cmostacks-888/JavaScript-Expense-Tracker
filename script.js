@@ -268,7 +268,18 @@ async function loadBitcoinData(days = 1) {
       btcChangeDisplay.textContent = error.message;
   }
 }
+// CMOSTACKS Universal Button Haptics
+document.addEventListener("click", function(event) {
+  const button = event.target.closest(
+      "button, .nav-item, .corner-controls a"
+  );
 
+  if (!button) return;
+
+  if ("vibrate" in navigator) {
+      navigator.vibrate(25);
+  }
+});
 
 
 
