@@ -281,6 +281,21 @@ document.addEventListener("click", function(event) {
   }
 });
 
+const cornerButtons = document.querySelectorAll(
+  '.corner-controls > .nav-item'
+);
+
+cornerButtons.forEach(button => {
+  button.addEventListener('click', () => {
+
+    cornerButtons.forEach(item => {
+      item.classList.remove('active');
+    });
+
+    button.classList.add('active');
+  });
+});
+
 
 
 
