@@ -1054,3 +1054,17 @@ body {
     font-size: 10px;
   }
 }
+/* CMOSTACKS - Center Action Bar */
+.action-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: calc(100% - 32px);
+  max-width: 1100px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+}
