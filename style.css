@@ -1194,3 +1194,27 @@ body {
     padding-bottom: 110px;
   }
 }
+
+/* MOBILE LANDSCAPE - KEEP NAVIGATION HORIZONTAL */
+@media (max-width: 10000px) and (max-height: 600px) and (orientation: landscape){
+
+  .action-bar {
+    position: fixed !important;
+    top: auto !important;
+    bottom: calc(16px + env(safe-area-inset-bottom)) !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    width: calc(100vw - 32px) !important;
+    max-width: 600px !important;
+    height: auto !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+
+  .action-bar .nav-item {
+    flex: 1;
+    width: auto;
+  }
+}
